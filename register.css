@@ -1,0 +1,16 @@
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50%);
+    transition: all 0.2s ease-out;
+}
+.form-control:focus ~ .form-label,
+.form-control:not(:placeholder-shown) ~ .form-label {
+    font-size: 0.8rem;
+    transform: translateY(0) scale(0.75);
+}
